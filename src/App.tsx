@@ -8,8 +8,6 @@ import {
 } from 'framer-motion'
 import Lenis from 'lenis'
 
-import Images from './assets/mountain.jpg'
-
 const Secion1 = ({
   scrollYProgress
 }: {
@@ -35,7 +33,7 @@ const Secion1 = ({
         <p>Section</p>
 
         <div className="relative h-[6rem] w-[12.5vw] overflow-hidden">
-          <img src={Images} alt="mountain" />
+          <img src="/mountain.jpg" alt="mountain" />
         </div>
 
         <p>Transition</p>
@@ -56,7 +54,7 @@ const Secion2 = ({
     <motion.div style={{ scale, rotate }} className="relative h-screen">
       <img
         className="absolute inset-0 h-full w-full object-cover"
-        src={Images}
+        src="/mountain.jpg"
         alt="mountain"
       />
     </motion.div>
